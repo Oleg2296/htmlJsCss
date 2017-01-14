@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Change</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
+
+<body>
+<div class="popup" style="display: none" id="passw">
+    <div class="popup-content">
+       <span style="text-align: center"> Введіть пароль:</span>
+        <input type="password" id="potap" style="margin: 20px 0 0 70px;width: 140px">
+        <br><br>
+        <input type="button" id='okpass' value="okay" style="margin-left: 120px">
+    </div>
+</div>
+    <main id='main11'>
+        <div class="div1" id="divOne"></div>
+        <div class="divbot" id='divTwo'>
+            <input type="button" value="редагувати" id="knopka1">
+            <input type="button" value="стилізувати" id="knopka2">
+            <input type="button" id="passbut" value="Перевірка"></div>
+        <div class="div2">
+            <div class="changebox1" id="changeText">
+                <textarea id="texar" cols="62" rows="15"></textarea>
+                <input type="button" value="Зберегти" id="savebut">
+                <input type="button" value="Додати" id="addbut"> </div>
+            <div class="changebox2" id="changeStyleTxt">
+                <form action="" name="styleOfTxt"> <span>Розмір тексту:</span>
+                    <input type="radio" value="12" class="ratio" name="ptOfTxt"> <span>12pt</span>
+                    <input type="radio" value="14" class="ratio" name="ptOfTxt"> <span>14pt</span>
+                    <input type="radio" value="16" class="ratio" name="ptOfTxt"> <span>16pt</span>
+                    <input type="radio" value="18" class="ratio" name="ptOfTxt"> <span>18pt</span>
+                    <input type="radio" value="22" class="ratio" name="ptOfTxt"> <span>22pt</span>
+                    <br>
+                    <br>
+                    <br> <span>Стиль тексту:</span>
+                    <select name="" id="selectTxtStyle">
+                        <option value="fantasy">fantasy</option>
+                        <option value="serif">serif</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" value="Колір тексту" id="textColor">
+                    <input type="button" value="Колір фону" id="fonColor">
+                    <br>
+                    <br>
+                    <input type="checkbox" id="boldTxt"> <span>Жирний текст</span>
+                    <input type="checkbox" id="kursTxt"> <span>Курсивний текст</span> </form>
+                <div id="colTxt">
+                    <div class="bixa" style="background: red"></div>
+                    <div class="bixa" style="background: blue"></div>
+                    <div class="bixa" style="background: black;"></div>
+                    <div class="bixa" style="background: green; clear: both"></div>
+                    <div class="bixa" style="background: yellow"></div>
+                    <div class="bixa" style="background: violet"></div>
+                    <div class="bixa" style="background: darkblue;  clear: both;"></div>
+                    <div class="bixa" style="background: gray"></div>
+                    <div class="bixa" style="background: darkgreen"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="main2" id="main22">
+       <h2 style="color: white">Виберіть що саме, ви хочете обрати:</h2>
+       <input type="radio" name="tablSps" id="table">
+       <span>Таблиця</span>
+       <input type="radio" name="tablSps" id="spisok">
+       <span>Список</span>
+        <div id="tablesp" style="display: none" class="tableBox" style="margin-top: 20px; margin-bottom: 30px; display: ;">
+          
+            <span >Введіть кількість рядків таблиці</span>
+            <input class="valids" type="text" id='rows' style="width:30px">
+            <br>
+            <br>
+            <span>Введіть кількість стовбців таблиці</span>
+            <input class="valids" type="text" id="cols" style="width:30px">
+            <h3>Стилізуйте таблицю</h3>
+            <br>
+            <span>Введіть висоту комірки таблиці</span>
+            <input class="valids" type="text" id="tbHeight" style="width:30px">
+            <br>
+            <span>Введіть ширину комірки таблиці</span>
+            <input class="valids" type="text" id="tbWidth" style="width:30px">
+            <br><br>
+            <span>Товщина</span>
+            <input class="valids" type="text" id="bordWidth" style="width: 30px">
+            <span>Тип Лінії</span>
+            <select id="bordPoloska">
+                <option value="dotted">dotted</option>
+                <option value="dashed">dashed </option>
+                <option value="solid">solid</option>
+                <option value="double">double</option>
+                 <option value="groove">groove</option>
+            </select>
+            <span>Колір лінії</span>
+            <select id="bordColor">
+                <option value="red">red</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+            </select>
+            <br><br><br>
+            <input type="button" id="createTb" value="Створити таблицю">
+        </div>
+        <div class="spisBox" id="tablesp2" style="margin-top: 20px; display: none">
+           <span>Нумерований:</span>
+           <input type="radio" id="numbor" name="spis12">
+           <span>Маркерований:</span>
+           <input type="radio" id="numbor2" name="spis12">
+           <br><br><br>
+            <span>Введіть кількість елементів у списку:</span>
+            <input class="valids" type="text" style="width: 30px" id="spelem">
+            <br><br>
+            <span>Тип маркування списку:</span>
+            <br>
+            <select id="typeMark">
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="square">square</option>
+            </select>
+             <select id="typeMark1" style="display:none ;">
+                <option value="a">123</option>
+                <option value="1">abc</option>
+                <option value="I">I II III</option>
+            </select>
+            <br><br>
+            <input type="button" value="Створити список" id="spblocksp">
+        </div>
+    </div>
+    <div id="invis" style="display: none"></div>
+    <div id="invis2" style="display: none"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
